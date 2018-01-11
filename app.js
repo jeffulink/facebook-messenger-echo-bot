@@ -3,9 +3,11 @@ let bodyParser = require('body-parser')
 let request = require('request')
 let app = express()
 
-const FACEBOOK_ACCESS_TOKEN = 'Your_Facebook_Access_Token'
+// 需要有此 Token
+const FACEBOOK_ACCESS_TOKEN = 'EAAd8T4stiWwBAMxQ5y0m9k619buYXVw15OwWhtt7ZCgJpLVgMjl6AYDjBwlLbom8qZA8BgByX24MhMhPwaJfDDaCzcFSZCbrnn9dHT3GNlvx5ZACvXMJhEZBGZAscspBHZBfUYUTevGKec7ZAu5qXPf8G4TO7TPNWK5LGY2odXZBmNQZDZD'
 const PORT = process.env.PORT || 3000
-const VERIFY_TOKEN = 'Your_Verify_Token'
+// 需要注意此
+const VERIFY_TOKEN = 'ulink230'
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
